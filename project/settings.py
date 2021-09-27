@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dbname',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1', # Or an IP Address that your DB is hosted on
-        'PORT': '',
+        'NAME': 'sampledb',
+        'USER': 'user',
+        'PASSWORD': 'pass',
+        'HOST': 'db-kirom', # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
     },
 }
 
