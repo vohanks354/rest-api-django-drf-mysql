@@ -5,7 +5,7 @@ COPY . /usr/src/app
 
 RUN python3 -m pip install --upgrade pip && python3 -m pip install --upgrade setuptools  && pip3 -V
 # RUN pip3 install django
-RUN pip3 install --no-cache-dir -r dependencies.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 EXPOSE 8000
 CMD ["python3", "manage.py", "runserver"]
